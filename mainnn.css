@@ -1,0 +1,124 @@
+body {
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+    min-width: 320px;
+    overflow-x: hidden;
+    height: 1020vh;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    height: 100%
+}
+
+.header {
+    position: relative;
+    min-height: 1020px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header .row {
+    min-height: 1020px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.btn-main {
+  display: inline-block;
+  padding: 10px 35px;
+  font-style: 18px;
+  border: none;
+  color: goldenrod;
+  border-radius: 10px;
+  font-weight: 700;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .4);
+  transition: all 0.7s ease-out;
+  opacity: 1;
+}
+
+.btn-main:hover {
+  box-shadow: 0 5px 10px rgba(66, 66, 66, 1);
+  border-radius: 20px;
+  transform: scale(1.1);
+  opacity: 1;
+  color: black;
+  background-color: white;
+}
+
+
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    --c: goldenrod;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+nav ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+nav ul li:hover {
+    color: black;
+}
+
+nav ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+    --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+    --n: 4;
+}
